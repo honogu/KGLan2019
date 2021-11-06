@@ -19,17 +19,13 @@ body{
 	position:absolute;
 }
 
-.video-background{
-	position: fixed;
-	overflow: hidden;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	transform: translateX(-50%) translateY(-50%);
-	z-index: -100;
+video{
+	object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 /*----------HOME----------*/
@@ -127,7 +123,7 @@ a:active{
 .Info{
 	overflow:hidden;
 	width:100%;
-	height:100vh;
+	height:100em;
 	display:flex;
 	justify-content:center;
 	position:relative;
@@ -138,7 +134,8 @@ a:active{
 	opacity:0.9;
 	border-radius: 10px;
 	position:absolute;
-	top:50px;
+	top:2%;
+	left:20%;
 	right:50px;
 }
 
@@ -178,7 +175,7 @@ a:active{
 	background-image: linear-gradient(#cc0099, #9933ff);
 	border-radius: 10px;
 	position:absolute;
-	top:20%;
+	top:25%;
 	width:75%;
 	opacity:0.95;
 }
@@ -212,10 +209,11 @@ a:active{
 .Arvamus .box{
 	position:absolute;
 	border-radius: 25px;
-	top:30%;
+	top:22%;
 	background-image: linear-gradient(#ff3399, #9933ff);
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-	width:400px;
+	right: 30%;
+	left: 30%;
 	height:400px;
 	display:flex;
 	justify-content:center
@@ -305,5 +303,27 @@ a:active{
 
 	.title-bracket{
 	top:50%;
+	}
+}
+
+@media screen and (min-height: 1000px) {
+  .navbar{
+	font-size:30px;
+	}
+
+	a:hover{
+	font-size:32px;
+	}
+
+	a:active{
+	font-size:32px;
+	}
+
+	.Info #i1{
+	font-size:28px;
+	}
+
+	.Info #i2{
+	font-size:22px;
 	}
 }
